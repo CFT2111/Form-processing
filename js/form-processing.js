@@ -1,22 +1,10 @@
 
-class Country {
-  constructor(name, capital, continent, population) {
-    this.name = name;
-    this.capital = capital;
-    this.continent = continent;
-    this.population = population;
-  }
-  getFullDetails(){
-   return `${this.name} is a country in ${this.continent}. The capital city of ${this.name} is ${this.capital}. ${this.name} has a population of ${this.population}.`
-  }
-
-}
-
-const countries=[];
-countries.push(new Country( "England","London", "Europe", 53000000));
-countries.push(new Country( "USA","Washington", "N. America", 321000000));
-countries.push(new Country( "France","Paris", "Europe", 66900000));
-countries.push(new Country( "Japan","Tokyo", "Asia", 127000000));
+const countries=[
+    {name : "England", capital : "London", continent : "Europe", population: 53000000},
+    {name : "France", capital : "Paris", continent : "Europe", population: 67000000},
+    {name : "USA", capital : "Washington", continent : "N. America", population: 325000000},
+    {name : "Japan", capital : "Tokyo", continent : "Asia", population: 127000000}
+]
 
 
 /*
