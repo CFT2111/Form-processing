@@ -13,6 +13,8 @@ a) Write a some JavaScript code that uses document.getElementById to grab hold o
 b) Add a click event listener to the button. Again use a simple console.log message to check this has worked.
 */
 
+
+
 /*
 2) Next try and do some form processing. Start with the text box. 
 a) Can you get whatever the user has typed into the text box to appear in the console. 
@@ -28,24 +30,79 @@ b) Can you also display the user's choice of continent in the console.
 */
 
 /*
+//answers to questions 1-4
+function processTheForm(){
+  const userName = document.getElementById("username").value;
+  const continent = document.getElementById("continent").value;
+  const matchingCountries = countries.filter(function(country){
+    if(country.continent == continent){
+      return true;
+    }
+    return false;
+  })
+  console.log(`${userName}, here is a list of countries:`)
+  matchingCountries.forEach(function(country){
+    console.log(country.name);
+  })
+}
+
+const btn  = document.getElementById("formBtn");
+btn.addEventListener("click",function(){
+  processTheForm()
+})
+
+const selectMenu  = document.getElementById("continent");
+selectMenu.addEventListener("change",function(){
+  processTheForm()
+})
+*/
+
+/*
 5. If you have got the above to work, think how you have organised and structured your code. It would probably be a good idea to have something like the following (main would be called from the event listener function). Re-factor yuor code to use a number of different functions.
+*/
+
 
 function getUserName(){
-	//code to get the username and return it
+    const userName = document.getElementById("username").value;
+  return userName;
 }
 function getContinent(){
-	//code to get the continent and return it
+    const continent = document.getElementById("continent").value;
+  return continent;
 }
 function filterCountries(continent){
-	//code to filter the array of countries and return the result
+    const matchingCountries = countries.filter(function(country){
+    if(country.continent == continent){
+      return true;
+    }
+    return false;
+  })
+  return matchingCountries
 }
 function displayResults(userName, matchingCountries){
-	//code to display the details of the matching countries in the console
+  if(matchingCountries.length>0){
+      console.log(`${userName}, here is a list of countries:`)
+      matchingCountries.forEach(function(country){
+        console.log(country.name);
+      })
+  }else{
+    console.log(`${userName}, no countries match`)
+  }
+    
 }
 function main(){
-	const userName = getUserName();
-	const continent = getContinent();
-	const matchingCountries = filterCountries(continent);
-	displayResults(userName, matchingCountries);
+    const userName = getUserName();
+    const continent = getContinent();
+    const matchingCountries = filterCountries(continent);
+    displayResults(userName, matchingCountries);
 }
-*/
+
+const btn  = document.getElementById("formBtn");
+btn.addEventListener("click",function(){
+  main()
+})
+
+const selectMenu  = document.getElementById("continent");
+selectMenu.addEventListener("change",function(){
+  main()
+})
