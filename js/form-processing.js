@@ -8,14 +8,14 @@ const countries=[
 
 
 /*
-1) 
-a) Write a some JavaScript code that uses document.getElementById to grab hold of the button in the HTML page. Use a console.log message to check this has worked. 
+1)
+a) Write a some JavaScript code that uses document.getElementById to grab hold of the button in the HTML page. Use a console.log message to check this has worked.
 b) Add a click event listener to the button. Again use a simple console.log message to check this has worked.
 */
 
 /*
-2) Next try and do some form processing. Start with the text box. 
-a) Can you get whatever the user has typed into the text box to appear in the console. 
+2) Next try and do some form processing. Start with the text box.
+a) Can you get whatever the user has typed into the text box to appear in the console.
 b) Can you also display the user's choice of continent in the console.
 */
 
@@ -48,4 +48,8 @@ function main(){
 	const matchingCountries = filterCountries(continent);
 	displayResults(userName, matchingCountries);
 }
+*/
+
+/*
+6. Now think about how you can use a window.load event to trigger the set-up tasks for your application. Typically the load event would execute code that uses the DOM to select elements from the page and attach events to these elements.
 */
