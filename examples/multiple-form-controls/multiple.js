@@ -6,7 +6,7 @@ function getSearchTerm(){
 };
 
 function checkTerms(){
-	const termsChkBox=document.getElementById("terms");   
+	const termsChkBox=document.getElementById("terms");
 	return termsChkBox.checked;
 }
 
@@ -27,7 +27,6 @@ function processForm(){
 
 
 const btn =  document.getElementById("myButton");
-
 
 btn.addEventListener("click",function(){
 	processForm();
