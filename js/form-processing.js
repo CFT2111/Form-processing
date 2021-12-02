@@ -9,12 +9,12 @@ const countries=[
 
 /*
 1)
-a) Write a some JavaScript code that uses document.getElementById to grab hold of the button in the HTML page. Use a console.log message to check this has worked.
+a) Write a some JavaScript code that uses document.querySelector() to grab hold of the button in the HTML page. Use a console.log message to check this has worked.
 b) Add a click event listener to the button. Again use a simple console.log message to check this has worked.
 */
 
 /*
-const btn  = document.getElementById("formBtn");
+const btn  = document.querySelector("#formBtn");
 console.log(btn);
 btn.addEventListener("click",function(){
   console.log("The event handling works");
