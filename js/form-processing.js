@@ -9,8 +9,8 @@ const countries=[
 
 /*
 1)
-a) Write a some JavaScript code that uses document.querySelector() to grab hold of the button in the HTML page. Use a console.log message to check this has worked.
-b) Add a click event listener to the button. Again use a simple console.log message to check this has worked.
+a) Write some JavaScript code that uses document.querySelector() to grab hold of the button in the HTML page. Use a console.log() message to check this has worked.
+b) Add a 'click' event listener to the button. Again use a simple console.log() message to check this has worked.
 */
 
 /*
@@ -22,7 +22,7 @@ btn.addEventListener("click",function(){
 */
 
 /*
-2) Next try and do some form processing. Start with the text box.
+2) Next, try and do some form processing. Start with the text box.
 a) Can you get whatever the user has typed into the text box to appear in the console.
 b) Can you also display the user's choice of continent in the console.
 */
@@ -100,7 +100,7 @@ selectMenu.addEventListener("change",function(){
 */
 
 /*
-5. If you have got the above to work, think how you have organised and structured your code. It would probably be a good idea to have something like the following (main would be called from the event listener function). Re-factor yuor code to use a number of different functions.
+5. If you have got the above to work, think how you have organised and structured your code. It would probably be a good idea to have something like the following (main would be called from the event listener function). Re-factor your code to use a number of different functions.
 */
 
 /*
@@ -152,7 +152,7 @@ selectMenu.addEventListener("change",function(){
 */
 
 /*
-6. Now think about how you can use a window.load event to trigger the set-up tasks for your application. Typically the load event would execute code that uses the DOM to select elements from the page and attach events to these elements.
+6. Now think about how you can use a window.load event to trigger the set-up tasks for your application. Typically the 'load' event would execute code that uses the DOM to select elements from the page and attach events to these elements.
 */
 
 /*
