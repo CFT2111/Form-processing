@@ -28,14 +28,14 @@ b) Can you also display the user's choice of continent in the console.
 */
 /*
 function processTheForm(){
-  const userName = document.getElementById("username").value;
+  const userName = document.querySelector("#username").value;
   console.log(userName);
-  const continent = document.getElementById("continent").value;
+  const continent = document.querySelector("#continent").value;
   console.log(continent);
 }
 
 
-const btn  = document.getElementById("formBtn");
+const btn  = document.querySelector("#formBtn");
 btn.addEventListener("click",function(){
   processTheForm();
 })
@@ -47,8 +47,8 @@ btn.addEventListener("click",function(){
 
 /*
 function processTheForm(){
-  const userName = document.getElementById("username").value;
-  const continent = document.getElementById("continent").value;
+  const userName = document.querySelector("#username").value;
+  const continent = document.querySelector("#continent").value;
   const matchingCountries = countries.filter(function(country){
     if(country.continent == continent){
       return true;
@@ -61,7 +61,7 @@ function processTheForm(){
   })
 }
 
-const btn  = document.getElementById("formBtn");
+const btn  = document.querySelector("#formBtn");
 btn.addEventListener("click",function(){
   processTheForm()
 })
@@ -74,8 +74,8 @@ btn.addEventListener("click",function(){
 
 /*
 function processTheForm(){
-  const userName = document.getElementById("username").value;
-  const continent = document.getElementById("continent").value;
+  const userName = document.querySelector("#username").value;
+  const continent = document.querySelector("#continent").value;
   const matchingCountries = countries.filter(function(country){
     if(country.continent == continent){
       return true;
@@ -88,12 +88,12 @@ function processTheForm(){
   })
 }
 
-const btn  = document.getElementById("formBtn");
+const btn  = document.querySelector("#formBtn");
 btn.addEventListener("click",function(){
   processTheForm()
 })
 
-const selectMenu  = document.getElementById("continent");
+const selectMenu  = document.querySelector("#continent");
 selectMenu.addEventListener("change",function(){
   processTheForm()
 })
@@ -105,11 +105,11 @@ selectMenu.addEventListener("change",function(){
 
 /*
 function getUserName(){
-  const userName = document.getElementById("username").value;
+  const userName = document.querySelector("#username").value;
   return userName;
 }
 function getContinent(){
-    const continent = document.getElementById("continent").value;
+    const continent = document.querySelector("#continent").value;
   return continent;
 }
 function filterCountries(continent){
@@ -139,12 +139,12 @@ function main(){
     displayResults(userName, matchingCountries);
 }
 
-const btn  = document.getElementById("formBtn");
+const btn  = document.querySelector("#formBtn");
 btn.addEventListener("click",function(){
   main()
 })
 
-const selectMenu  = document.getElementById("continent");
+const selectMenu  = document.querySelector("#continent");
 selectMenu.addEventListener("change",function(){
   main()
 })
@@ -157,12 +157,12 @@ selectMenu.addEventListener("change",function(){
 
 /*
 function getUserName(){
-  const userName = document.getElementById("username").value;
+  const userName = document.querySelector("#username").value;
   return userName;
 }
 
 function getContinent(){
-  const continent = document.getElementById("continent").value;
+  const continent = document.querySelector("#continent").value;
   return continent;
 }
 function filterCountries(continent){
@@ -193,11 +193,11 @@ function main(){
 }
 
 function init(){
-  const btn  = document.getElementById("formBtn");
+  const btn  = document.querySelector("#formBtn");
   btn.addEventListener("click",function(){
     main()
   })
-  const selectMenu  = document.getElementById("continent");
+  const selectMenu  = document.querySelector("#continent");
   selectMenu.addEventListener("change",function(){
     main()
   })
