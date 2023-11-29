@@ -1,6 +1,6 @@
 
 function processForm(){
- 	const correctRdioBtn=document.getElementById("caracas");
+ 	const correctRdioBtn=document.querySelector("#caracas");
 	if(correctRdioBtn.checked){
 		console.log("You are correct");
 	}else{
@@ -8,7 +8,7 @@ function processForm(){
 	}
 };
 
-const btn =  document.getElementById("myButton");
+const btn =  document.querySelector("#myButton");
 
 btn.addEventListener("click",function(){
 	processForm();
