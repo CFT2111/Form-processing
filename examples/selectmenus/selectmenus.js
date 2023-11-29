@@ -1,21 +1,10 @@
-
-let selectMenu;
 function processForm(){
  	const price = selectMenu.value;
-	console.log(price); // e.g. £2.30
+	console.log(price);
 };
 
-
-
-selectMenu =  document.getElementById("flavours");
+const selectMenu =  document.querySelector("#flavours");
 selectMenu.addEventListener("change",function(){
   	processForm();
 })
 
-
-
-// const btn =  document.getElementById("myButton");
-//
-// btn.addEventListener("click",function(){
-// 	processForm();
-// })
