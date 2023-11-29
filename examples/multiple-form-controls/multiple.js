@@ -1,12 +1,12 @@
 
 
 function getSearchTerm(){
-	const searchTerm=document.getElementById("search").value;
+	const searchTerm=document.querySelector("#search").value;
 	return searchTerm;
 };
 
 function checkTerms(){
-	const termsChkBox=document.getElementById("terms");
+	const termsChkBox=document.querySelector("#terms");
 	return termsChkBox.checked;
 }
 
@@ -26,7 +26,7 @@ function processForm(){
 
 
 
-const btn =  document.getElementById("myButton");
+const btn =  document.querySelector("myButton");
 
 btn.addEventListener("click",function(){
 	processForm();
