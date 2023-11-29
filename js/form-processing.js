@@ -13,12 +13,12 @@ const countries=[
 
 
 // 2. Next, try and do some form processing. Start with the text box.
-// a) Can you get whatever the user has typed into the text box to appear in the console.
+// a) Can you get the text the user has typed into the text box to appear in the console.
 // b) Can you also display the user's choice of continent in the console.
 
 
 
-// 3. At the top of this file is some code that creates an array of Country objects. 
+// 3. At the top of this file is some code that creates an array of country objects. 
 //    Can you use the user's choice of continent to display matching countries from this array e.g. if the user selects 'Europe' the details for England and France should be displayed in the console.
 
 
